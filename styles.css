@@ -19,7 +19,7 @@
     padding: 0;
 }
 .yasb-bar {
-    background-color:rgba(0, 0, 0, 0.248);
+    background-color:rgba(64, 63, 63, 0.374);
     border-radius: 1px;
     border: 1px solid rgba(192, 192, 192, 0);
     backdrop-filter: blur(100px) saturate(1.2s);
