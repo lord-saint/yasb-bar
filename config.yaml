@@ -29,6 +29,7 @@ bars:
       windows_app_bar: true
       hide_on_fullscreen: true
 
+
     dimensions:
       width: "100%"
       height: 28
@@ -46,6 +47,7 @@ bars:
         "glazewm_tiling_direction",
         # "taskbar",
         "lines",
+        "traffic"
         
       ]
       center:
@@ -90,7 +92,7 @@ widgets:
         "disk",
         "memory",
         "cpu",
-        # "traffic"
+        # 
       ]
       collapse_options:
         enabled: true
