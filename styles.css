@@ -4,25 +4,25 @@
     --yellow: #ffd16d;
     --blue: #448fff;
     --lavender: #b4befe;
-    --pink: #ff8cb4;
+    --pink: hsl(339, 100%, 77%);
     --text1: #ffffff;
     --text2: #020202;
     --text3: #9399b2;
-    --text4: #7f849c;
+    --text4: #1e1d1d3c;
 }
 * {
     font-size: 14px;
     color: var(--text1);
-    font-weight: 700;
-    font-family: "JetBrainsMono NFP", "Segoe UI";
+    font-weight: 500;
+    font-family: "JetBrainsMono NFP", "Segoe UI" , sans-serif,monospace;
     margin: 0;
     padding: 0;
 }
 .yasb-bar {
-    background-color:rgba(64, 63, 63, 0.374);
-    border-radius: 1px;
-    border: 1px solid rgba(192, 192, 192, 0);
-    backdrop-filter: blur(100px) saturate(1.2s);
+    background-color: var(--text4);
+    border-radius: 0px;
+    border: 0px solid rgba(98, 96, 96, 0);
+    backdrop-filter: blur(100px) saturate(150%);
 }
 .icon {
     color: var(--text1);
@@ -93,8 +93,8 @@
     margin: 0;
 }
 .power-menu-popup .button.cancel {
-    width: 935;
-    height: 100px;
+    width: 930px;
+    height: 150px;
     border-radius: 4px;
 }
 .power-menu-popup .button.cancel.hover .label {
