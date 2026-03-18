@@ -62,6 +62,7 @@ bars:
         "bluetooth",
         "microphone",
         "volume",
+        "brightness",
         "Battery",
         "sysinfo1",
       ]
@@ -399,7 +400,7 @@ widgets:
     type: "yasb.brightness.BrightnessWidget"
     options:
       label: "<span>{icon}</span>"
-      label_alt: "<span>{icon}</span>{percent}"
+      label_alt: "<span>{icon}</span>{percent}%"
       tooltip: true
       hide_unsupported: true
       brightness_toggle_level: [0, 50, 100]
@@ -484,8 +485,8 @@ widgets:
     options:
       label: "<span>\udb83\ude09</span>"
       image_path: "C:\\Users\\Sumit Dahiya\\Downloads\\Wallpapers"
-      change_automatically: True # Automatically change wallpaper
-      update_interval: 3600 # If change_automatically is true, update interval in seconds
+      change_automatically: true # Automatically change wallpaper
+      update_interval: 1800 # If change_automatically is true, update interval in seconds
       animation:
         enabled: False
         duration: 0
