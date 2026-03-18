@@ -8,7 +8,7 @@
     --text1: #ffffff;
     --text2: #020202;
     --text3: #9399b2;
-    --text4: #1e1d1d3c;
+    --text4: #3f3b3b5d;
 }
 * {
     font-size: 14px;
@@ -20,8 +20,8 @@
 }
 .yasb-bar {
     background-color: var(--text4);
-    border-radius: 0px;
-    border: 0px solid rgba(98, 96, 96, 0);
+    border-radius: 1px;
+    border: 0.5px solid rgba(0, 0, 0, 0);
     backdrop-filter: blur(100px) saturate(150%);
 }
 .icon {
