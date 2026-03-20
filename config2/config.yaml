@@ -69,6 +69,7 @@ bars:
         - "wallpapers"
         #- "bluetooth"
         - "microphone"
+
         - "brightness"
         - "notifications"
         - "volume"
@@ -128,7 +129,7 @@ widgets:
       show_thumbnail: true
       controls_only: false
       controls_left: false
-      controls_hide: false
+      controls_hide: true
       hide_empty: false
       thumbnail_alpha: 100
       thumbnail_padding: 14
@@ -456,7 +457,7 @@ widgets:
   traffic:
     type: "yasb.traffic.TrafficWidget"
     options:
-      label:     "\ueab4{download_speed} | \ueab7{upload_speed}"
+      label:     "\ueab4 \ueab7"
       label_alt: "\ueab4 {download_speed}  \ueab7 {upload_speed}"
       update_interval: 1000
       menu:
