@@ -13,7 +13,7 @@
     --tx3: #6c7086;
     --tx4: #45475a;
 
-    --bar-bg:     rgba(0, 0, 0, 0.425);
+    --bar-bg:     rgba(55, 54, 54, 0.425);
     --bar-border: rgb(255, 255, 255);
 
     --pop-bg:     rgba(0, 0, 0, 0.527);
@@ -424,3 +424,4 @@ QPushButton { outline: none; border-radius: 0; }
 .glazewm-workspaces .ws-btn:hover {
     color: #ffffff;
 }
+
