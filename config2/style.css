@@ -1,19 +1,20 @@
 :root {
     --mauve:    #cba6f7;
-    --red:      #f38ba8;
+    --wsc:      #06eaff;
+    --ws:      #ffffff;
     --yellow:   #f9e2af;
     --blue:     #89b4fa;
     --blue-sat: #448fff;
     --lavender: #b4befe;
     --green:    #a6e3a1;
-    --peach:    #fab387;
+
 
     --tx1: #ffffff;
     --tx2: #a6adc8;
     --tx3: #6c7086;
     --tx4: #45475a;
 
-    --bar-bg:     rgba(55, 54, 54, 0.425);
+    --bar-bg:     rgba(0, 0, 0, 0.377);
     --bar-border: rgb(255, 255, 255);
 
     --pop-bg:     rgba(0, 0, 0, 0.527);
@@ -45,7 +46,7 @@
 * {
     font-size: 14px;
     color: var(--tx1);
-    font-weight: 700;
+    font-weight: 500;
     font-family: "JetBrainsMono NFP", "Segoe UI", monospace, sans-serif;
     margin: 0;
     padding: 0;
@@ -80,18 +81,18 @@
 .widget .label { padding: 0; }
 
 /* ── Separator ──────────────────────────────────────── */
-.separator-widget { margin: 0 1px; padding: 0; }
+.separator-widget { margin: 0 0px; padding: 0; }
 .separator-widget:hover { background-color: transparent; border-color: transparent; }
 .separator-widget .widget-container .label {
-    color: rgb(255, 255, 255);
+    color: var(--ws);
     padding: 0;
-    font-size: 10px;
-    font-weight: 300;
+    font-size: 14px;
+    font-weight: 700;
 }
 
 /* ── Grouper ────────────────────────────────────────── */
 .grouper-button {
-    font-size: 9px;
+    font-size: 14px;
     font-weight: 800;
     color: var(--tx1);
     padding: 0 2px;
@@ -237,7 +238,7 @@
 .microphone-widget:hover .icon, .microphone-widget:hover .label { color: rgba(255,255,255,0.92); }
 
 /* ── Volume ─────────────────────────────────────────── */
-.volume-widget { padding: 0 5px; margin: 0 1px; }
+.volume-widget { padding: 0 0px; margin: 0 0px; }
 .volume-widget .icon { color: rgba(255,255,255,0.45); transition: color var(--tf); }
 .volume-widget .label { color: rgba(255,255,255,0.65); font-size: 12px; }
 .volume-widget .label.muted { color: var(--tx4); }
@@ -246,7 +247,7 @@
 .volume-widget:hover .label { color: rgba(255,255,255,0.96); }
 
 /* ── Battery ────────────────────────────────────────── */
-.battery-widget { padding: 0 5px; margin: 0 1px; }
+.battery-widget { padding: 0 2px; margin: 0 2px; }
 .battery-widget .widget-container .icon  { padding: 0; color: rgba(255,255,255,0.45); font-size: 13px; }
 .battery-widget .widget-container .label { color: rgba(255,255,255,0.65); font-size: 12px; }
 .battery-widget:hover .icon  { color: rgba(255,255,255,0.92); }
@@ -289,8 +290,8 @@
 .disk-group { background-color: var(--pop-bg); border: 1px solid var(--pop-border); border-radius: var(--r8); box-shadow: var(--pop-shadow); padding: 4px 0; }
 
 /* ── Traffic ────────────────────────────────────────── */
-.traffic-widget { padding: 0 5px; margin: 0 2px; }
-.traffic-widget .label { color: rgba(255,255,255,0.50); font-size: 12px; }
+.traffic-widget { padding: 0 px; margin: 3px 3px; }
+.traffic-widget .label { color: rgba(255,255,255,0.50); font-size: 14px; }
 .traffic-widget:hover .label { color: rgba(255,255,255,0.88); }
 .traffic-menu { background-color: var(--pop-bg); min-width: 260px; border: 1px solid var(--pop-border); border-radius: var(--r16); box-shadow: var(--pop-shadow); }
 .traffic-menu .header { border-bottom: 1px solid var(--pop-div); background-color: transparent; }
@@ -403,25 +404,42 @@ QPushButton { outline: none; border-radius: 0; }
 }
 
 .glazewm-workspaces .ws-btn.empty {
-    color: rgba(255, 255, 255, 0.2);
+    color: rgba(255, 255, 255, 0.729);
 }
 
 .glazewm-workspaces .ws-btn.populated {
-    color: rgba(255, 255, 255, 0.55);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.35);
+    color: rgba(255, 255, 255, 0.684);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.617);
 }
 
 .glazewm-workspaces .ws-btn.active_empty {
-    color: #ffffff;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    color: var(--wsc);
+    /* border-bottom: 2px solid #00eeff; */
 }
 
 .glazewm-workspaces .ws-btn.active_populated {
-    color: #ffffff;
-    border-bottom: 2px solid #ffffff;
+    color: var(--wsc);
+    border-bottom: 2px solid var(--wsc);
 }
 
 .glazewm-workspaces .ws-btn:hover {
     color: #ffffff;
 }
 
+.glazewm-tiling-direction {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.glazewm-tiling-direction .btn {
+    font-size: 20px;
+    width: 18px;
+    padding: 0 4px 0 4px;
+    color: #CDD6F4;
+    border: none;
+}
+
+.glazewm-tiling-direction .btn:hover {
+    background-color: #727272;
+}
