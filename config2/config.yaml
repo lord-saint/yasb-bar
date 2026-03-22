@@ -66,10 +66,9 @@ bars:
         - "media"
         - "lines"
         - "wifi"
+        - "traffic"
         - "wallpapers"
-        #- "bluetooth"
         - "microphone"
-
         - "brightness"
         - "notifications"
         - "volume"
@@ -114,8 +113,8 @@ widgets:
       widgets: ["disk", "memory", "cpu"]
       collapse_options:
         enabled: true
-        expanded_label:  "\udb80\udefc"
-        collapsed_label: "\udb80\udefd"
+        expanded_label:  "󰒓"
+        collapsed_label: "󰒓"
         label_position: "right"
 
   media:
@@ -124,8 +123,8 @@ widgets:
       label: "{title}"
       label_alt: "{artist} - {title}"
       max_field_size:
-        label:     16
-        label_alt: 24
+        label:     10
+        label_alt: 20
       show_thumbnail: true
       controls_only: false
       controls_left: false
@@ -143,7 +142,7 @@ widgets:
       media_menu:
         blur: false
         round_corners: false
-        alignment: "right"
+        alignment: "center"
         direction: "down"
         offset_top: 4
         offset_left: 0
@@ -268,7 +267,7 @@ widgets:
         round_corners: true
         round_corners_type: "normal"
         border_color: "System"
-        alignment: "right"
+        alignment: "center"
         direction: "down"
         offset_top: 4
         offset_left: 0
@@ -363,7 +362,7 @@ widgets:
     options:
       label: "<span>\udb83\ude09</span>"
       image_path: "C:\\Users\\Sumit Dahiya\\Downloads\\Wallpapers"
-      change_automatically: true
+      change_automatically: false
       update_interval: 1800
       animation:
         enabled: false
@@ -457,7 +456,7 @@ widgets:
   traffic:
     type: "yasb.traffic.TrafficWidget"
     options:
-      label:     "\ueab4 \ueab7"
+      label:     "󰓅"
       label_alt: "\ueab4 {download_speed}  \ueab7 {upload_speed}"
       update_interval: 1000
       menu:
@@ -497,7 +496,7 @@ widgets:
     options:
       horizontal_label: "\udb81\udce1"
       vertical_label:   "\udb81\udce2"
-
+      
 
   systray:
     type: "yasb.systray.SystrayWidget"
@@ -536,5 +535,5 @@ widgets:
       tooltip: false
       callbacks:
         on_left: "toggle_notification"
-        on_right: "do_nothing"
-        on_middle: "toggle_label"
+        on_right: "toggle_label"
+        on_middle: "do_nothing"
